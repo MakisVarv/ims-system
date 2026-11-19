@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "<5.3,>=5.2.19"
+djangorestframework = "<3.17,>=3.16"
+psycopg = {extras = ["binary"], version = "<4,>=3.2"}
+django-environ = "<0.13,>=0.12"
+drf-spectacular = "<0.31,>=0.30"
+
+[dev-packages]
+
+[requires]
+python_version = "3.14"
+
+[scripts]
+db = "docker compose up -d --wait db"
+db-stop = "docker compose stop db"
+check = "python manage.py check"
+migrations = "python manage.py makemigrations"
+migrate = "python manage.py migrate"
+admin = "python manage.py createsuperuser"
+server = "python manage.py runserver 127.0.0.1:8000"
