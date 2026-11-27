@@ -88,7 +88,7 @@ class LoginView(AuthAPIView):
 
         user = authenticate(
             request=request._request,
-            **serializer.validated_data,
+            credentials=serializer.validated_data,
         )
 
         if user is None:

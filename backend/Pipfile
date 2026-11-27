@@ -9,6 +9,7 @@ djangorestframework = "<3.17,>=3.16"
 psycopg = {extras = ["binary"], version = "<4,>=3.2"}
 django-environ = "<0.13,>=0.12"
 drf-spectacular = "<0.31,>=0.30"
+django-filter = "<27,>=26.2"
 
 [dev-packages]
 
