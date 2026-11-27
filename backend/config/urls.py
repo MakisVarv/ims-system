@@ -36,4 +36,5 @@ urlpatterns = [
         name="swagger-ui",
     ),
     path("api/v1/auth/", include("modules.identity.urls")),
+    path("api/v1/", include("modules.catalog.urls")),
 ]

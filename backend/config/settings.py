@@ -23,6 +23,8 @@ INSTALLED_APPS = [
     "rest_framework",
     "drf_spectacular",
     "modules.identity.apps.IdentityConfig",
+    "django_filters",
+    "modules.catalog.apps.CatalogConfig",
 ]
 
 MIDDLEWARE = [
